@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <img class="logo" src="assets/img/logo_2.png" alt="logo-convert-money">
+
+    <main class="form-converter">
+        <label>
+            Converter <strong>de</strong> 
+            <select>
+                <option value="real">R$ Real Brasileiro</option>
+                <!-- <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="iene">¥ Iene</option>
+                <option value="yuan">Ұ Yuan</option>
+                <option value="bitcoin">₿ Bitcoin</option> -->
+            </select>
+        </label>
+        
+        <label>
+            Converter <strong>para</strong> 
+            <select class="choose-currency">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="iene">¥ Iene</option>
+                <option value="peso">$ Peso</option>
+                <option value="yuan">Ұ Yuan</option>
+                <option value="bitcoin">₿ Bitcoin</option>
+            </select>
+        </label>
+
+        <label>
+            Valor
+            <input class="input-value" type="number" placeholder="R$ 10.000,00">
+        </label>
+
+        <button class="convertButton">Converter</button>
+
+        <section class="result">
+            <div class="currency-box">
+                <img src="assets/img/real.png" alt="logo-moeda-a-conveter">
+                <p class="currency">Real</p>
+                <p class="value-to-convert">R$ 0,00</p>
+            </div>
+
+            <img class="arrow-img" src="assets/img/arrow.png" alt="seta-indicativa">
+
+            <div class="currency-box">
+                <img class="currency-img" src="assets/img/dolar.png" alt="logo-moeda-convertidar">
+                <p class="currency" id="currency_name">Dólar americano</p>
+                <p class="value">US$ 0.0</p>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+<script src="scripts.js"></script>
+</html>

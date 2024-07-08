@@ -116,8 +116,9 @@ function changeCurrency(){
     convertValues() // depois de tracar img e nome, trocar tbm o valor da conversão.
 }
 
-//Pega o evento de mudança no segundo input de conerter a moeda
+//Pega o evento de mudança no segundo input de converter a moeda
 currencySelect.addEventListener("change", changeCurrency)
+
 
 //Pega o evento quando clicar no botão
 convertButton.addEventListener("click", convertValues)

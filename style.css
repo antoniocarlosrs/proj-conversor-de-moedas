@@ -7,9 +7,9 @@
 }  
 
 body {
-    background:linear-gradient(45deg, #b8aacd,#f4f3f7);
-    /* background-color: #ddcef1; */
-    
+    /* background:linear-gradient(45deg, #b8aacd,#f4f3f7); */
+    background-color: #ddcef1;
+    height: 100vh;
 }
 
 .logo   {
@@ -23,7 +23,7 @@ body {
     background: #F4F4F4;
     border-radius: 20px;
     border: 1px solid #772FD3;;
-    margin: 0 auto 30px;
+    margin: 0 auto 15px;
     padding: 23px 24px 23px;
 }
 
@@ -103,3 +103,16 @@ button:active {
     font-size: 20px;
     font-weight: 600;
 }
+
+@media screen and (max-width: 390px) {
+
+    .logo {
+        display: none;
+    }
+
+    .form-converter {
+        margin-top: 20px;
+        width: 350px;
+    }
+}
+
